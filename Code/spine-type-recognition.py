@@ -56,5 +56,6 @@ model.compile(optimizer='adam',
 
 model.fit(ds_train, epochs = 20, verbose = 2)
 
-
+spine_rec_model = 'spine_rec_model.pk1'
+pickle.dump(model, open(spine_rec_model, 'wb'))
     
